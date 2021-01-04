@@ -192,14 +192,14 @@ const App = () => {
             <hr className={classes.hrMbl}></hr>
             <Typography className={classes.contentSubHeading1} variant="h6" > Artists find patrons to fund and bring to life new ideas, connect with passionate collectors and sell your finished works.</Typography>
             <Typography className={classes.contentSubHeading2} variant="subtitle1" > Patrons, artists you love to create something new and wonderful, access exclusive perks and follow progress of your favourite artists. </Typography>
-            {/* <Typography className={classes.contentSubHeading2} variant="subtitle1" > Accree exclusive perks and follow progress of your favotire artists.  </Typography> */}
+            <Typography className={classes.contentSubHeading2} variant="subtitle1" > Accree exclusive perks and follow progress of your favotire artists.  </Typography>
           </Grid>
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12} style={{ position: 'absolute', top: '193vh', left: "50%", transform: 'translate(-50%,0%)', width: "100%" }}>
           <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
             <h1 className={classes.contentHeading}>VISUALISE BEST IN CLASS ART</h1>
             <hr className={classes.hrMbl}></hr>
-            <Typography style={{ color: "white" }} variant="h6" > <span style={{ fontWeight: "bold" }}> Browse and discover</span>  curated creations that moves the four corners of the world</Typography>
+            <Typography style={{ color: "white" }} variant="h6" > <span style={{ fontWeight: "bold" }}> Browse and discover</span>  curated creations that move the four corners of the world</Typography>
 
 
           </Grid>
