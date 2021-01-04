@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@font-face {
+  font-family: 'AkkoPro';
+  src: url(../src/assets/fonts/Linotype-AkkoPro-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../src/assets/fonts/montserrat-light.woff) format('woff');
+
+}
+
+@font-face {
+  font-family: 'Walkway';
+  src: url(../src/assets/fonts/Walkway_bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'MontserratBold';
+  src: url(../src/assets/fonts/Montserrat-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'MontserratBlack';
+  src: url(../src//assets/fonts/Montserrat-Black.woff) format('woff');
+}
+
