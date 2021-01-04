@@ -188,11 +188,11 @@ const App = () => {
       <Grid className={classes.Box1} container>
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12} style={{ position: 'absolute', top: '153vh', left: "50%", transform: 'translate(-50%,0%)', width: "100%" }}>
           <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-            <h1 className={classes.contentHeading}>PATRONAGE</h1>
+            <h1 className={classes.contentHeading}>PATRONAGE AND MARKETPLACE</h1>
             <hr className={classes.hrMbl}></hr>
-            <Typography className={classes.contentSubHeading1} variant="h6" > Get you creation sponsored by cnnoisseurs and fine collectors</Typography>
-            <Typography className={classes.contentSubHeading2} variant="subtitle1" > Become a patron of the next art moments.  </Typography>
-            <Typography className={classes.contentSubHeading2} variant="subtitle1" > Accree exclusive perks and follow progress of your favotire artists.  </Typography>
+            <Typography className={classes.contentSubHeading1} variant="h6" > Artists find patrons to fund and bring to life new ideas, connect with passionate collectors and sell your finished works.</Typography>
+            <Typography className={classes.contentSubHeading2} variant="subtitle1" > Patrons, artists you love to create something new and wonderful, access exclusive perks and follow progress of your favourite artists. </Typography>
+            {/* <Typography className={classes.contentSubHeading2} variant="subtitle1" > Accree exclusive perks and follow progress of your favotire artists.  </Typography> */}
           </Grid>
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12} style={{ position: 'absolute', top: '193vh', left: "50%", transform: 'translate(-50%,0%)', width: "100%" }}>
@@ -210,8 +210,8 @@ const App = () => {
           <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
             <h1 className={classes.contentHeading}>TRADE ART DIGITALLY</h1>
             <hr className={classes.hrMbl}></hr>
-            <Typography className={classes.contentSubHeading1} variant="h6" > Unlock new streams for creators, and offers exclusive reward incentives to colectors.</Typography>
-            <Typography className={classes.contentSubHeading2} variant="subtitle1" > Buy, trade and exchange collectibles on the second market. </Typography>
+            <Typography className={classes.contentSubHeading1} variant="h6" > Benefit from the rising value of the art you create by receiving royalties every time one of your artworks is sold.  </Typography>
+            <Typography className={classes.contentSubHeading2} variant="subtitle1" >Access our worldwide network of patrons and collectors to grow and extend your audience.</Typography>
           </Grid>
         </Grid>
       </Grid>
@@ -227,8 +227,7 @@ const App = () => {
                 <Typography className={classes.title} variant="h5" color="textSecondary" gutterBottom>ARE YOU <br />AN ART COLLECTOR ?</Typography>
                 <hr style={{ width: "10%",  background: "#ffff",border: "#ffff solid", }} />
                 <Typography style={{fontFamily:"MontserratBold"}}>
-                  
-                   Power Art's Next Big hing
+                    Power Art's Next Big Thing
                    </Typography>
                 <br></br>
                 <Form />
@@ -239,6 +238,7 @@ const App = () => {
 
 
           <Grid item xs={1} sm={1} md={1} lg={1} xl={1}></Grid>
+          
         <Grid item item className={classes.boxBorder}  xs={10} sm={10} md={4} lg={4} xl={4}>
           <Card className={classes.cardBox}>
             <Grid item>
