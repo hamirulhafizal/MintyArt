@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/hamirulhafizal/MintyArt.github.io/static/css/main.24bef542.chunk.css",
+    "main.js": "/hamirulhafizal/MintyArt.github.io/static/js/main.b9b9f1f6.chunk.js",
+    "main.js.map": "/hamirulhafizal/MintyArt.github.io/static/js/main.b9b9f1f6.chunk.js.map",
+    "runtime-main.js": "/hamirulhafizal/MintyArt.github.io/static/js/runtime-main.22683097.js",
+    "runtime-main.js.map": "/hamirulhafizal/MintyArt.github.io/static/js/runtime-main.22683097.js.map",
+    "static/js/2.b7122955.chunk.js": "/hamirulhafizal/MintyArt.github.io/static/js/2.b7122955.chunk.js",
+    "static/js/2.b7122955.chunk.js.map": "/hamirulhafizal/MintyArt.github.io/static/js/2.b7122955.chunk.js.map",
+    "static/js/3.2be0ae26.chunk.js": "/hamirulhafizal/MintyArt.github.io/static/js/3.2be0ae26.chunk.js",
+    "static/js/3.2be0ae26.chunk.js.map": "/hamirulhafizal/MintyArt.github.io/static/js/3.2be0ae26.chunk.js.map",
+    "index.html": "/hamirulhafizal/MintyArt.github.io/index.html",
+    "static/css/main.24bef542.chunk.css.map": "/hamirulhafizal/MintyArt.github.io/static/css/main.24bef542.chunk.css.map",
+    "static/js/2.b7122955.chunk.js.LICENSE.txt": "/hamirulhafizal/MintyArt.github.io/static/js/2.b7122955.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/hamirulhafizal/MintyArt.github.io/static/media/montserrat-light.d5ebe095.woff",
+    "static/media/container.1637ae0d.png": "/hamirulhafizal/MintyArt.github.io/static/media/container.1637ae0d.png",
+    "static/media/footer.76101f7b.png": "/hamirulhafizal/MintyArt.github.io/static/media/footer.76101f7b.png",
+    "static/media/lg.17ca0e43.png": "/hamirulhafizal/MintyArt.github.io/static/media/lg.17ca0e43.png",
+    "static/media/logo.6ce24c58.svg": "/hamirulhafizal/MintyArt.github.io/static/media/logo.6ce24c58.svg",
+    "static/media/logo.964ee79f.png": "/hamirulhafizal/MintyArt.github.io/static/media/logo.964ee79f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.22683097.js",
+    "static/js/2.b7122955.chunk.js",
+    "static/css/main.24bef542.chunk.css",
+    "static/js/main.b9b9f1f6.chunk.js"
+  ]
+}
