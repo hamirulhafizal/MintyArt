@@ -56,6 +56,32 @@ const useStyles = makeStyles((theme) => ({
 
 ));
 
+const FormCat = () => {
+    const [showResults, setShowResults] = React.useState(false)
+    const onClick = () => setShowResults(true)
+
+    
+    return(
+        <div>
+            <input  type="submit" value="search" onClick={onClick} />
+            {showResults ? <Result /> : null}
+            
+        </div>
+    )
+}
+
+const Result = () => (
+    <div id="results" className="search-result">
+        <script type="/script">
+        
+        </script>
+
+        some
+
+
+    </div>
+)
+
 const Form = () => {
 
     const classes = useStyles();
@@ -81,9 +107,14 @@ const Form = () => {
                             label="E-mail" />
                     </Grid>
                     <br></br>
+                    
                     <Button className={classes.ButtonBox}>SUBMIT</Button>
+                    {/* < FormCat/> */}
                 </Grid>
             </form>
+            <script>
+
+            </script>
         </>
 
     );
@@ -91,4 +122,4 @@ const Form = () => {
 }
 
 
-export default Form
+export default Form 

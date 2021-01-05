@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
   },
     appBar: {
     color: "transparent",
-    background: "none",
+    backgroundColor: "#00000061",
     paddingLeft:"5%",
     paddingRight:"5%",
     paddingTop:"10px",
@@ -57,7 +57,7 @@ export default function ButtonAppBar() {
 
           </Typography>
           <Button className={classes.appBarBtn}>Home</Button>
-          <Button className={classes.appBarBtn}>Request Invitation</Button>
+          <Button className={classes.appBarBtn} href="/#form">Request Invitation</Button>
         </Toolbar>
       </AppBar>
    

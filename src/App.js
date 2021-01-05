@@ -11,6 +11,7 @@ import React from 'react';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from "@material-ui/core/Grid";
+import Box from "@material-ui/core/Box";
 
 import './App.css';
 import Header from './components/header/Header';
@@ -129,6 +130,9 @@ const useStyles = makeStyles((theme) => ({
   },
   
   boxBorder:{
+
+    paddingLeft: "5% !important",
+    paddingRight: "5% !important"
     // padding:"20px",
     
     // position:"relative",
@@ -149,6 +153,11 @@ const useStyles = makeStyles((theme) => ({
     fontFamily:"MontserratBlack",
     
   },
+  box:{
+    // display:"block",
+    // wdith:"50%"
+
+  }
 
 }));
 
@@ -165,15 +174,22 @@ const App = () => {
             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
               <img src={lg}></img>
             </Grid>
+
+          
             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-              <h2 style={{ color: "white" }}>POWERED CREATIVITY</h2>
-              <h1 style={{ color: "#257ce1" }}>PATRONAGE RECOINED</h1>
+     
+                <h2 style={{ color: "white" }}>POWERED CREATIVITY</h2>
+                <h1 style={{ color: "#257ce1" }}>PATRONAGE RECOINED</h1>
 
-              <hr className={classes.hr}></hr>
+                <hr className={classes.hr}></hr>
 
-              <Typography style={{ color: "white" , fontFamily:"'MontserratBold'"}}> Minty is for culture shapers, connoisseurs and art owners.
-              We fuel the creation and appreciation of art that will define a generation.
-              </Typography>
+                    <Typography style={{ color: "white" , fontFamily:"'MontserratBold'"}}>
+                                Minty is for culture shapers, connoisseurs and art owners.
+                                 We fuel the creation and appreciation of art that will define a generation.
+                    </Typography>
+              
+        
+        
               <Typography style={{ color: "white"  , fontFamily:"'MontserratBold'"}}>
                   Art is powerful.  We harness technology to empower the people that power it.  </Typography>
             </Grid>
@@ -188,19 +204,23 @@ const App = () => {
       <Grid className={classes.Box1} container>
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12} style={{ position: 'absolute', top: '153vh', left: "50%", transform: 'translate(-50%,0%)', width: "100%" }}>
           <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-            <h1 className={classes.contentHeading}>PATRONAGE AND MARKETPLACE</h1>
-            <hr className={classes.hrMbl}></hr>
-            <Typography className={classes.contentSubHeading1} variant="h6" > Artists find patrons to fund and bring to life new ideas, connect with passionate collectors and sell your finished works.</Typography>
-            <Typography className={classes.contentSubHeading2} variant="subtitle1" > Patrons, artists you love to create something new and wonderful, access exclusive perks and follow progress of your favourite artists. </Typography>
-            <Typography className={classes.contentSubHeading2} variant="subtitle1" > Accree exclusive perks and follow progress of your favotire artists.  </Typography>
+            <div style={{marginLeft:"7%", marginRight:"7%"}}>
+              <h1 className={classes.contentHeading}>PATRONAGE AND MARKETPLACE</h1>
+              <hr className={classes.hrMbl}></hr>
+              <Typography className={classes.contentSubHeading1} variant="h6" > Artists find patrons to fund and bring to life new ideas, connect with passionate collectors and sell your finished works.</Typography>
+              <Typography className={classes.contentSubHeading2} variant="subtitle1" > Patrons, artists you love to create something new and wonderful, access exclusive perks and follow progress of your favourite artists. </Typography>
+              <Typography className={classes.contentSubHeading2} variant="subtitle1" > Accree exclusive perks and follow progress of your favourite artists.  </Typography>                
+            </div>
+            
           </Grid>
         </Grid>
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12} style={{ position: 'absolute', top: '193vh', left: "50%", transform: 'translate(-50%,0%)', width: "100%" }}>
           <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+          <div style={{marginLeft:"7%", marginRight:"7%"}}>
             <h1 className={classes.contentHeading}>VISUALISE BEST IN CLASS ART</h1>
             <hr className={classes.hrMbl}></hr>
             <Typography style={{ color: "white" }} variant="h6" > <span style={{ fontWeight: "bold" }}> Browse and discover</span>  curated creations that move the four corners of the world</Typography>
-
+          </div>
 
           </Grid>
         </Grid>
@@ -208,20 +228,25 @@ const App = () => {
 
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12} style={{ position: 'absolute', top: '233vh', left: "50%", transform: 'translate(-50%,0%)', width: "100%" }}>
           <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-            <h1 className={classes.contentHeading}>TRADE ART DIGITALLY</h1>
-            <hr className={classes.hrMbl}></hr>
-            <Typography className={classes.contentSubHeading1} variant="h6" > Benefit from the rising value of the art you create by receiving royalties every time one of your artworks is sold.  </Typography>
-            <Typography className={classes.contentSubHeading2} variant="subtitle1" >Access our worldwide network of patrons and collectors to grow and extend your audience.</Typography>
+              <div style={{marginLeft:"7%", marginRight:"7%"}}>
+                <h1 className={classes.contentHeading}>TRADE ART DIGITALLY</h1>
+                <hr className={classes.hrMbl}></hr>
+                <Typography className={classes.contentSubHeading1} variant="h6" > Benefit from the rising value of the art you create by receiving royalties every time one of your artworks is sold.  </Typography>
+                <Typography className={classes.contentSubHeading2} variant="subtitle1" >Access our worldwide network of patrons and collectors to grow and extend your audience.</Typography>
+              </div>
           </Grid>
         </Grid>
       </Grid>
 
       {/* Form area */}
+      
       <Grid container spacing={2} style={{ position: 'absolute', top: '305vh' }} >
 
-        <Grid item xs={1} sm={1} md={1} lg={1} xl={1}></Grid>
+      <Grid item xs={1} sm={1} md={1} lg={1} xl={1}></Grid>
+      <div id="form">
+      </div>
 
-          <Grid item className={classes.boxBorder}  xs={10} sm={10} md={4} lg={4} xl={4}>
+          <Grid item className={classes.boxBorder}  xs={10} sm={10} md={5} lg={4} xl={4}>
             <Card className={classes.cardBox}>
               <CardContent>
                 <Typography className={classes.title} variant="h5" color="textSecondary" gutterBottom>ARE YOU <br />AN ART COLLECTOR ?</Typography>
@@ -230,15 +255,17 @@ const App = () => {
                     Power Art's Next Big Thing
                    </Typography>
                 <br></br>
-                <Form />
+                <Form/>
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={1} sm={1} md={1} lg={1} xl={1}></Grid>
-
-
-          <Grid item xs={1} sm={1} md={1} lg={1} xl={1}></Grid>
           
+         
+          
+      <Grid item xs={1} sm={1} md={1} lg={1} xl={1}></Grid>
+      <Grid item xs={1} sm={1} lg={1} xl={1}></Grid>
+          
+
         <Grid item item className={classes.boxBorder}  xs={10} sm={10} md={4} lg={4} xl={4}>
           <Card className={classes.cardBox}>
             <Grid item>
@@ -249,13 +276,14 @@ const App = () => {
                   <hr style={{ width: "10%",  background: "#ffff",border: "#ffff solid",  fontFamily:"Walkway !important",fontWeight: 'bold', }} />
                   <Typography variant="subtitle2" style={{fontFamily:"MontserratBold"}} > Let us power your creativity</Typography>
                   <br></br>
-                  <Form />
+                  <Form/>
                 </CardContent>
               </Card>
             </Grid>
           </Card>
         </Grid>
-        <Grid item xs={1} sm={1} md={1} lg={1} xl={1}></Grid>
+        
+      <Grid item xs={1} sm={1} md={1} lg={1} xl={1}></Grid>
 
       </Grid>
     </div>
