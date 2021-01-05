@@ -56,7 +56,8 @@ export default function ButtonAppBar() {
           <Typography variant="h6" className={classes.title}>
 
           </Typography>
-          <Button className={classes.appBarBtn}>Home</Button>
+          <Button className={classes.appBarBtn} style={{borderBottom: "5px solid rgb(37, 124, 225)", color: "rgb(37, 124, 225)"}}>Home</Button>
+          <span style={{color:"#FFFFFF", padding:"0px 10px 5px 10px",fontWeight: "bold",fontSize:"20px"}}>.</span>
           <Button className={classes.appBarBtn} href="/#form">Request Invitation</Button>
         </Toolbar>
       </AppBar>

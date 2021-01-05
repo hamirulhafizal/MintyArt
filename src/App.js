@@ -63,8 +63,12 @@ const useStyles = makeStyles((theme) => ({
     top: "0px",
     marginLeft: "auto",
     marginRight: "auto",
-    [theme.breakpoints.down('md')]: {
-      height: "500vh",
+    
+    [theme.breakpoints.only('sm')]: {
+      height: "520vh",
+    },
+    [theme.breakpoints.only('xs')]: {
+      height: "620vh",
     },
   },
 
@@ -74,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
     height: "10vh",
     display: "flex",
     alignItems: "center",
-    width: "70%",
+    width: "80%",
     fontFamily: "MontserratBlack",
     fontWeight: 'bold',
   },
@@ -87,7 +91,14 @@ const useStyles = makeStyles((theme) => ({
     width: "6%",
     background: "#257ce1",
     border: "#257ce1 solid",
-    fontFamily: "'MontserratBold'"
+    fontFamily: "'MontserratBold'",
+    display:"none",
+    [theme.breakpoints.only('sm')]: {
+      display: "block",
+    },
+    [theme.breakpoints.only('xs')]: {
+      display: "block",
+    },
 
   },
   contentHeading: {
@@ -134,17 +145,25 @@ const useStyles = makeStyles((theme) => ({
   },
 
   boxBorder: {
-
-    paddingLeft: "5% !important",
-    paddingRight: "5% !important"
+    padding:"0% 1% !important",
+    // paddingLeft: "5% !important",
+    // paddingRight: "5% !important"
     // padding:"20px",
 
     // position:"relative",
     // padding: "2px 0 0 50px",
     // margin: "0 20px 10px 0",
     // zIndex: "0",
+    // [theme.breakpoints.only('sm')]: {
+      
+    // },
+    // [theme.breakpoints.only('xs')]: {
+      
+    // },
+
   },
   cardBox: {
+    paddingTop:"20px",
     background: "transparent",
     // backgroundColor:"black",
     color: "white",
@@ -155,6 +174,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 14,
     color: "white",
     fontFamily: "MontserratBlack",
+    paddingBottom:"10px"
 
   },
   box: {
@@ -167,10 +187,110 @@ const useStyles = makeStyles((theme) => ({
     top: '60vh',
     left: "50%",
     transform: 'translate(-50%,-50%)',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.only('sm')]: {
       top: '70vh',
     },
+    [theme.breakpoints.only('xs')]: {
+      top: '90vh',
+    },
+  },
+  patronageSection: {
+    position: 'absolute',
+    top: '155vh', 
+    left: "50%", 
+    transform: 'translate(-50%,0%)', 
+    width: "90%",
+    paddingLeft:"100px",
+
+    [theme.breakpoints.only('sm')]: {
+      top: '175vh',
+      paddingLeft:"0px",
+    },
+    [theme.breakpoints.only('xs')]: {
+      top: '210vh',
+      paddingLeft:"0px",
+    },
+
+  },
+  visualise:{
+    position: 'absolute', 
+    top: '198vh', 
+    left: "50%", 
+    transform: 'translate(-50%,0%)', 
+    width: "90%",
+    paddingLeft:"100px",
+    [theme.breakpoints.only('sm')]: {
+      top: '235vh',
+      paddingLeft:"0px",
+    },
+    [theme.breakpoints.only('xs')]: {
+      top: '280vh',
+      paddingLeft:"0px",
+    },
+  },
+  trade:{
+    position: 'absolute', 
+    top: '233vh', 
+    left: "50%", 
+    transform: 'translate(-50%,0%)', 
+    width: "90%",
+    paddingLeft:"100px",
+    [theme.breakpoints.only('sm')]: {
+      top: '267vh',
+      paddingLeft:"0px",
+    },
+    [theme.breakpoints.only('xs')]: {
+      top: '320vh',
+      paddingLeft:"0px",
+    },
+  },
+  description:{
+    borderLeft:"5px solid rgb(37, 124, 225)", 
+    paddingLeft:"20px",
+
+    [theme.breakpoints.only('sm')]: {
+      borderLeft:"none", 
+    paddingLeft:"0px",
+    },
+    [theme.breakpoints.only('xs')]: {
+      borderLeft:"none", 
+      paddingLeft:"0px",
+    },
+  },
+
+  formArea:{
+    position: 'absolute', 
+    top: '310vh',
+    width:"100%",
+    padding: "0px 10%",
+
+    [theme.breakpoints.only('sm')]: {
+      top: '340vh',
+    },
+    [theme.breakpoints.only('xs')]: {
+      top: '430vh',
+    },
+  },
+  descBox:{
+    // textAlign: "center",
+    height: "10vh",
+    display: "flex",
+    alignItems: "center",
+    width: "80%",
+    fontFamily: "MontserratBlack",
+    fontWeight: 'bold',
+    [theme.breakpoints.only('sm')]: {
+      textAlign: "center",
+    },
+    [theme.breakpoints.only('xs')]: {
+      textAlign: "center",
+    },
+
   }
+
+ 
+
+
 }));
 
 const App = () => {
@@ -213,10 +333,10 @@ const App = () => {
         </Grid>
       </Grid>
 
-      <Grid className={classes.Box1} container>
-        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} style={{ position: 'absolute', top: '153vh', left: "50%", transform: 'translate(-50%,0%)', width: "100%" }}>
-          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-            <div style={{ marginLeft: "7%", marginRight: "7%" }}>
+      <Grid className={classes.descBox} container>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} className={classes.patronageSection}>
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12} className={classes.description}>
+            <div>
               <h1 className={classes.contentHeading}>PATRONAGE AND MARKETPLACE</h1>
               <hr className={classes.hrMbl}></hr>
               <Typography className={classes.contentSubHeading1} variant="h6" > Artists find patrons to fund and bring to life new ideas, connect with passionate collectors and sell your finished works.</Typography>
@@ -226,21 +346,21 @@ const App = () => {
 
           </Grid>
         </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} style={{ position: 'absolute', top: '193vh', left: "50%", transform: 'translate(-50%,0%)', width: "100%" }}>
-          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-            <div style={{ marginLeft: "7%", marginRight: "7%" }}>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} className={classes.visualise}>
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12} className={classes.description} >
+            <div>
               <h1 className={classes.contentHeading}>VISUALISE BEST IN CLASS ART</h1>
               <hr className={classes.hrMbl}></hr>
-              <Typography style={{ color: "white" }} variant="h6" > <span style={{ fontWeight: "bold" }}> Browse and discover</span>  curated creations that move the four corners of the world</Typography>
+              <Typography style={{ color: "white", fontFamily: "'MontserratBold'" }} variant="h6" > <span style={{ fontWeight: "bold" }}> Browse and discover</span>  curated creations that move the four corners of the world</Typography>
             </div>
 
           </Grid>
         </Grid>
 
 
-        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} style={{ position: 'absolute', top: '233vh', left: "50%", transform: 'translate(-50%,0%)', width: "100%" }}>
-          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-            <div style={{ marginLeft: "7%", marginRight: "7%" }}>
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} className={classes.trade}>
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12} className={classes.description}>
+            <div>
               <h1 className={classes.contentHeading}>TRADE ART DIGITALLY</h1>
               <hr className={classes.hrMbl}></hr>
               <Typography className={classes.contentSubHeading1} variant="h6" > Benefit from the rising value of the art you create by receiving royalties every time one of your artworks is sold.  </Typography>
@@ -252,18 +372,15 @@ const App = () => {
 
       {/* Form area */}
 
-      <Grid container spacing={2} style={{ position: 'absolute', top: '305vh' }} >
+      <Grid container spacing={2} className={classes.formArea}>
 
-        <Grid item xs={1} sm={1} md={1} lg={1} xl={1}></Grid>
-        <div id="form">
-        </div>
-
-        <Grid item className={classes.boxBorder} xs={10} sm={10} md={5} lg={4} xl={4}>
+        <Grid item id="form"  xs={1} sm={1} md={1} lg={1} xl={1}></Grid>
+        <Grid  item className={classes.boxBorder} xs={10} sm={10} md={4} lg={4} xl={4}>
           <Card className={classes.cardBox}>
             <CardContent>
               <Typography className={classes.title} variant="h5" color="textSecondary" gutterBottom>ARE YOU <br />AN ART COLLECTOR ?</Typography>
-              <hr style={{ width: "10%", background: "#ffff", border: "#ffff solid", }} />
-              <Typography style={{ fontFamily: "MontserratBold" }}>
+              <hr style={{ width: "15%", background: "#ffff", border: "#ffff solid", }} />
+              <Typography variant="subtitle2" style={{ fontFamily: "MontserratBold" }} >
                 Power Art's Next Big Thing
                    </Typography>
               <br></br>
@@ -271,29 +388,26 @@ const App = () => {
             </CardContent>
           </Card>
         </Grid>
-
-
-
         <Grid item xs={1} sm={1} md={1} lg={1} xl={1}></Grid>
+
+
+
         <Grid item xs={1} sm={1} lg={1} xl={1}></Grid>
 
 
         <Grid item item className={classes.boxBorder} xs={10} sm={10} md={4} lg={4} xl={4}>
-          <Card className={classes.cardBox}>
-            <Grid item>
+          
               <Card className={classes.cardBox}>
                 <CardContent>
                   <Typography className={classes.title} variant="h5" color="textSecondary" gutterBottom>
                     ARE YOU <br />AN ARTIST ?</Typography>
-                  <hr style={{ width: "10%", background: "#ffff", border: "#ffff solid", fontFamily: "Walkway !important", fontWeight: 'bold', }} />
+                  <hr style={{ width: "15%", border: "#ffffff solid" }} />
                   <Typography variant="subtitle2" style={{ fontFamily: "MontserratBold" }} > Let us power your creativity</Typography>
                   <br></br>
                   <Form />
                 </CardContent>
               </Card>
             </Grid>
-          </Card>
-        </Grid>
 
         <Grid item xs={1} sm={1} md={1} lg={1} xl={1}></Grid>
 
