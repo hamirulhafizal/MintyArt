@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/MintyArt/static/css/main.223c8103.chunk.css",
-    "main.js": "/MintyArt/static/js/main.85f6f537.chunk.js",
-    "main.js.map": "/MintyArt/static/js/main.85f6f537.chunk.js.map",
+    "main.js": "/MintyArt/static/js/main.be3559f7.chunk.js",
+    "main.js.map": "/MintyArt/static/js/main.be3559f7.chunk.js.map",
     "runtime-main.js": "/MintyArt/static/js/runtime-main.d5854a90.js",
     "runtime-main.js.map": "/MintyArt/static/js/runtime-main.d5854a90.js.map",
-    "static/js/2.f0a7475d.chunk.js": "/MintyArt/static/js/2.f0a7475d.chunk.js",
-    "static/js/2.f0a7475d.chunk.js.map": "/MintyArt/static/js/2.f0a7475d.chunk.js.map",
+    "static/js/2.3c43703d.chunk.js": "/MintyArt/static/js/2.3c43703d.chunk.js",
+    "static/js/2.3c43703d.chunk.js.map": "/MintyArt/static/js/2.3c43703d.chunk.js.map",
     "static/js/3.aeb4a928.chunk.js": "/MintyArt/static/js/3.aeb4a928.chunk.js",
     "static/js/3.aeb4a928.chunk.js.map": "/MintyArt/static/js/3.aeb4a928.chunk.js.map",
     "index.html": "/MintyArt/index.html",
     "static/css/main.223c8103.chunk.css.map": "/MintyArt/static/css/main.223c8103.chunk.css.map",
-    "static/js/2.f0a7475d.chunk.js.LICENSE.txt": "/MintyArt/static/js/2.f0a7475d.chunk.js.LICENSE.txt",
+    "static/js/2.3c43703d.chunk.js.LICENSE.txt": "/MintyArt/static/js/2.3c43703d.chunk.js.LICENSE.txt",
     "static/media/index.css": "/MintyArt/static/media/montserrat-light.d5ebe095.woff",
     "static/media/container.1637ae0d.png": "/MintyArt/static/media/container.1637ae0d.png",
     "static/media/footer.76101f7b.png": "/MintyArt/static/media/footer.76101f7b.png",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d5854a90.js",
-    "static/js/2.f0a7475d.chunk.js",
+    "static/js/2.3c43703d.chunk.js",
     "static/css/main.223c8103.chunk.css",
-    "static/js/main.85f6f537.chunk.js"
+    "static/js/main.be3559f7.chunk.js"
   ]
 }
