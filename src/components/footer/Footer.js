@@ -92,11 +92,12 @@ const Footer = () => {
 
                     <Grid className={classes.box} item xs={12} sm={12} md={4} lg={4} xl={4} >
                             <Typography style={{fontFamily: "'MontserratBold'"}} variant="h6" component="h2">
-                                contact us<br/> hello@Minty.art
+                               CONTACT US<br/> hello@minty.art
+                               {/* <a href="mailto:hello@minty.art"></a> */}
                             </Typography>  
                     </Grid>
                     <Grid className={classes.box} item xs={12} sm={12} md={4} lg={4} xl={4} >
-                            <img src={Imgftr} width="25%" height="auto"></img>
+                            <img src={Imgftr} width="30%" height="auto"></img>
                     </Grid>
                     <Grid className={classes.box} item xs={12} sm={12} md={4} lg={4} xl={4} >
                      
