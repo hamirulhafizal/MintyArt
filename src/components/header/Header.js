@@ -57,7 +57,7 @@ export default function ButtonAppBar() {
 
           </Typography>
           <Button className={classes.appBarBtn}>Home</Button>
-          <Button className={classes.appBarBtn} href="/#form">Request Invitation</Button>
+          <Button className={classes.appBarBtn} href="MintyArt/#form">Request Invitation</Button>
         </Toolbar>
       </AppBar>
    
