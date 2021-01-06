@@ -46,93 +46,50 @@ const Footer = () => {
 
     return(
         <>
+        <footer>
             <div className={classes.root}>
-                {/* <Grid container className={classes.container} spacing={4} >
-                    <Grid className={classes.box} xs={3} sm={3} md={3} lg={3} xl={3}  item>
-                    <Typography  variant="h6" component="h2">
-                        contact us <br /><br/> hello@Minty.art
-                    </Typography>     
-                        
-                    </Grid>
-                    <Grid className={classes.box} xs={3} sm={3} md={3} lg={3} xl={3}  item>
-                           <img src={Imgftr} width="100%" height="auto"></img>
-                    </Grid>
-                    <Grid className={classes.box} xs={3} sm={3} md={3} lg={3} xl={3}  item>
-                           <Grid container className={classes.containerIcon}>
-                               <Grid container style={{justifyContent:"center", fontSize:"100%"}}>
-                                   <Grid item>
-                                       <Typography  variant="h6" component="h2">
-                                              COMMUNITY
-                                       </Typography>
-                                   </Grid>
-                               </Grid>
 
-                            <Grid container style={{justifyContent:"center"}}>
-                                <Grid className={classes.BoxIcon} item>
-                                    <InstagramIcon style={{ fontSize: "xxx-large" }} ></InstagramIcon>
-                                </Grid>
-
-                                <Grid className={classes.BoxIcon} item>
-                                        <YouTubeIcon style={{ fontSize: "xxx-large" }}  ></YouTubeIcon>
-                                </Grid> 
-
-                                <Grid className={classes.BoxIcon}item>
-                                        <TwitterIcon style={{ fontSize: "xxx-large" }} ></TwitterIcon>
-                                </Grid> 
-                            </Grid>
-                               
-
-
-                            </Grid>   
-                           
-                    </Grid>
-                </Grid> */}
-
-                <Grid container className={classes.container} spacing={4} >
-
-                    <Grid className={classes.box} style={{display: "flex",justifyContent: "center",alignItems: "center"}} item xs={12} sm={12} md={4} lg={4} xl={4} >
-                            <Typography style={{fontFamily: "'MontserratBold'", fontSize: "90%"}} variant="h6" component="h2">
+                <Grid container className={classes.container} >
+                <Grid container style={{padding:"1%", margin:"0%"}} spacing={4}>
+                    <Grid className={classes.box} item style={{display: "flex",justifyContent: "center",alignItems: "center"}}  xs={12} sm={12} md={4} lg={4} xl={4} >
+                            <Typography onClick={event =>  window.open('hello@minty.art','_blank')} style={{fontFamily: "'MontserratBold'", fontSize: "90%"}} variant="h6" component="h2">
                                CONTACT US<br/> hello@minty.art
+                               
                                {/* <a href="mailto:hello@minty.art"></a> */}
+                               
                             </Typography>  
                     </Grid>
                     <Grid className={classes.box} item xs={12} sm={12} md={4} lg={4} xl={4} >
                             <img src={Imgftr} width="35%" height="auto"></img>
                     </Grid>
-                    <Grid className={classes.box} style={{display: "flex",justifyContent: "center",alignItems: "center"}}  item xs={12} sm={12} md={4} lg={4} xl={4} >
+                    <Grid className={classes.box} item style={{display: "flex",justifyContent: "center",alignItems: "center"}}   xs={12} sm={12} md={4} lg={4} xl={4} >
         
                     <div style={{justifyContent: "center",alignItems: "center"}}>
 
-                                <Typography style={{fontFamily: "'MontserratBold'", fontSize: "90%"}} variant="h6" component="h2">
+                            <Grid container style={{display:"block"}}>
+                                <Grid item>
+                                     <Typography style={{fontFamily: "'MontserratBold'", fontSize: "90%"}} variant="h6" component="h2">
                                                     COMMUNITY
-                                </Typography>
-                                <Box style={{ padding: "0%" }} >
+                                        </Typography>
+                                </Grid>
+                                <Grid item style={{display: "flex", justifyContent: "space-between"}}>
+                                <InstagramIcon  onClick={event =>  window.open('https://www.instagram.com/minty_nft/','_blank')} target="#blank"  style={{ fontSize: "x-large" }} ></InstagramIcon>
+                                <YouTubeIcon  onClick={event =>  window.open('https://www.youtube.com/channel/UCBS5ZY7WbUBJXepQ8ReXyFw','_blank')} target="#blank"  style={{ fontSize: "x-large" }} ></YouTubeIcon>
+                                <TwitterIcon  onClick={event =>  window.open('https://twitter.com/minty_nft','_blank')} target="#blank"  style={{ fontSize: "x-large" }} ></TwitterIcon>
+                                </Grid>
 
-                                <Button style={{ color: "white", fontSize: "100%" }} target="#blank"  href="https://www.instagram.com/minty_nft/">
-                                    <InstagramIcon style={{ fontSize: "xx-large" }} >
-                                    </InstagramIcon>
-                                </Button>
-
-                                <Button style={{ color: "white", fontSize: "100%" }} target="#blank"  href="https://www.youtube.com/channel/UCBS5ZY7WbUBJXepQ8ReXyFw">
-                                    <YouTubeIcon style={{ fontSize: "xx-large" }} >
-                                    </YouTubeIcon>
-                                </Button>
-                                
-                                <Button style={{ color: "white", fontSize: "100%" }} target="#blank"  href="https://twitter.com/minty_nft">
-                                    <TwitterIcon style={{ fontSize: "xx-large" }} >
-                                    </TwitterIcon>
-                                </Button>
-
-                                </Box>
+                            </Grid>
                         </div>
                     </Grid>
-
+                    </Grid>
                 </Grid>
 
 
 
 
             </div>
+        
+            </footer>
         </>
     );
 
