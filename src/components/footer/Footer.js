@@ -90,38 +90,41 @@ const Footer = () => {
 
                 <Grid container className={classes.container} spacing={4} >
 
-                    <Grid className={classes.box} item xs={12} sm={12} md={4} lg={4} xl={4} >
-                            <Typography style={{fontFamily: "'MontserratBold'"}} variant="h6" component="h2">
+                    <Grid className={classes.box} style={{display: "flex",justifyContent: "center",alignItems: "center"}} item xs={12} sm={12} md={4} lg={4} xl={4} >
+                            <Typography style={{fontFamily: "'MontserratBold'", fontSize: "90%"}} variant="h6" component="h2">
                                CONTACT US<br/> hello@minty.art
                                {/* <a href="mailto:hello@minty.art"></a> */}
                             </Typography>  
                     </Grid>
                     <Grid className={classes.box} item xs={12} sm={12} md={4} lg={4} xl={4} >
-                            <img src={Imgftr} width="30%" height="auto"></img>
+                            <img src={Imgftr} width="35%" height="auto"></img>
                     </Grid>
-                    <Grid className={classes.box} item xs={12} sm={12} md={4} lg={4} xl={4} >
-                     
-                        <Typography style={{fontFamily: "'MontserratBold'"}} variant="h6" component="h2">
-                                              COMMUNITY
-                        </Typography>
-                           <Box style={{ padding: "0%" }} >
+                    <Grid className={classes.box} style={{display: "flex",justifyContent: "center",alignItems: "center"}}  item xs={12} sm={12} md={4} lg={4} xl={4} >
+        
+                    <div style={{justifyContent: "center",alignItems: "center"}}>
 
-                        <Button style={{ color: "white" }} target="#blank"  href="https://www.instagram.com/minty_nft/">
-                            <InstagramIcon style={{ fontSize: "xx-large" }} >
-                            </InstagramIcon>
-                        </Button>
+                                <Typography style={{fontFamily: "'MontserratBold'", fontSize: "90%"}} variant="h6" component="h2">
+                                                    COMMUNITY
+                                </Typography>
+                                <Box style={{ padding: "0%" }} >
 
-                        <Button style={{ color: "white" }} target="#blank"  href="https://www.youtube.com/channel/UCBS5ZY7WbUBJXepQ8ReXyFw">
-                            <YouTubeIcon style={{ fontSize: "xx-large" }} >
-                            </YouTubeIcon>
-                        </Button>
-                        
-                        <Button style={{ color: "white" }} target="#blank"  href="https://twitter.com/minty_nft">
-                            <TwitterIcon style={{ fontSize: "xx-large" }} >
-                            </TwitterIcon>
-                        </Button>
+                                <Button style={{ color: "white", fontSize: "100%" }} target="#blank"  href="https://www.instagram.com/minty_nft/">
+                                    <InstagramIcon style={{ fontSize: "xx-large" }} >
+                                    </InstagramIcon>
+                                </Button>
 
-                        </Box>
+                                <Button style={{ color: "white", fontSize: "100%" }} target="#blank"  href="https://www.youtube.com/channel/UCBS5ZY7WbUBJXepQ8ReXyFw">
+                                    <YouTubeIcon style={{ fontSize: "xx-large" }} >
+                                    </YouTubeIcon>
+                                </Button>
+                                
+                                <Button style={{ color: "white", fontSize: "100%" }} target="#blank"  href="https://twitter.com/minty_nft">
+                                    <TwitterIcon style={{ fontSize: "xx-large" }} >
+                                    </TwitterIcon>
+                                </Button>
+
+                                </Box>
+                        </div>
                     </Grid>
 
                 </Grid>
