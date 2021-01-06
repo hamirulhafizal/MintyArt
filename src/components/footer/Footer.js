@@ -6,6 +6,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -90,7 +91,7 @@ const Footer = () => {
                 <Grid container className={classes.container} spacing={4} >
 
                     <Grid className={classes.box} item xs={12} sm={12} md={4} lg={4} xl={4} >
-                            <Typography  variant="h6" component="h2">
+                            <Typography style={{fontFamily: "'MontserratBold'"}} variant="h6" component="h2">
                                 contact us<br/> hello@Minty.art
                             </Typography>  
                     </Grid>
@@ -98,13 +99,26 @@ const Footer = () => {
                             <img src={Imgftr} width="25%" height="auto"></img>
                     </Grid>
                     <Grid className={classes.box} item xs={12} sm={12} md={4} lg={4} xl={4} >
-                        <Box>
-                        <Typography  variant="h6" component="h2">
+                     
+                        <Typography style={{fontFamily: "'MontserratBold'"}} variant="h6" component="h2">
                                               COMMUNITY
                         </Typography>
-                        <InstagramIcon style={{ fontSize: "xx-large" }} ></InstagramIcon>
-                        <YouTubeIcon style={{ fontSize: "xx-large" }}  ></YouTubeIcon>
-                        <TwitterIcon style={{ fontSize: "xx-large" }} ></TwitterIcon>
+                           <Box style={{ padding: "0%" }} >
+
+                        <Button style={{ color: "white" }} target="#blank"  href="https://www.instagram.com/minty_nft/">
+                            <InstagramIcon style={{ fontSize: "xx-large" }} >
+                            </InstagramIcon>
+                        </Button>
+
+                        <Button style={{ color: "white" }} target="#blank"  href="https://www.youtube.com/channel/UCBS5ZY7WbUBJXepQ8ReXyFw">
+                            <YouTubeIcon style={{ fontSize: "xx-large" }} >
+                            </YouTubeIcon>
+                        </Button>
+                        
+                        <Button style={{ color: "white" }} target="#blank"  href="https://twitter.com/minty_nft">
+                            <TwitterIcon style={{ fontSize: "xx-large" }} >
+                            </TwitterIcon>
+                        </Button>
 
                         </Box>
                     </Grid>

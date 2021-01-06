@@ -342,7 +342,7 @@ const App = () => {
               <hr className={classes.hrMbl}></hr>
               <Typography className={classes.contentSubHeading1} variant="h6" > Artists find patrons to fund and bring to life new ideas, connect with passionate collectors and sell your finished works.</Typography>
               <Typography className={classes.contentSubHeading2} variant="subtitle1" > Patrons, artists you love to create something new and wonderful, access exclusive perks and follow progress of your favourite artists. </Typography>
-              <Typography className={classes.contentSubHeading2} variant="subtitle1" > Accree exclusive perks and follow progress of your favourite artists.  </Typography>
+              {/* <Typography className={classes.contentSubHeading2} variant="subtitle1" > Accree exclusive perks and follow progress of your favourite artists.  </Typography> */}
             </div>
 
           </Grid>
@@ -367,15 +367,19 @@ const App = () => {
               <Typography className={classes.contentSubHeading1} variant="h6" > Benefit from the rising value of the art you create by receiving royalties every time one of your artworks is sold.  </Typography>
               <Typography className={classes.contentSubHeading2} variant="subtitle1" >Access our worldwide network of patrons and collectors to grow and extend your audience.</Typography>
             </div>
+            
           </Grid>
+          <div id="form" >  </div>
         </Grid>
       </Grid>
+
+   
 
       {/* Form area */}
 
       <Grid container spacing={2} className={classes.formArea}>
 
-        <Grid item id="form"  xs={1} sm={1} md={1} lg={1} xl={1}></Grid>
+        <Grid item  xs={1} sm={1} md={1} lg={1} xl={1}></Grid>
         <Grid  item className={classes.boxBorder} xs={10} sm={10} md={4} lg={4} xl={4}>
           <Card className={classes.cardBox}>
             <CardContent>
@@ -396,7 +400,7 @@ const App = () => {
         <Grid item xs={1} sm={1} lg={1} xl={1}></Grid>
 
 
-        <Grid item className={classes.boxBorder} xs={10} sm={10} md={4} lg={4} xl={4}>
+        <Grid item item className={classes.boxBorder} xs={10} sm={10} md={4} lg={4} xl={4}>
           
               <Card className={classes.cardBox}>
                 <CardContent>
@@ -413,7 +417,7 @@ const App = () => {
         <Grid item xs={1} sm={1} md={1} lg={1} xl={1}></Grid>
 
       </Grid>
-  
+     
     </div>
         <Footer></Footer>
     
