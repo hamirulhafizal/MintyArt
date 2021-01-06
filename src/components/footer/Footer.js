@@ -4,6 +4,7 @@ import Imgftr from '../../assets/images/footer.png'
 import { makeStyles } from '@material-ui/core/styles'
 
 import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -18,14 +19,12 @@ container:{
     display:"flex",
     justifyContent:"space-between",
     backgroundColor:"#257ce1",
-    flexDirection: "row"
+    padding:"0% 1% !important",
+    textAlign:"center",
+    color:"white"
+   
 },
 box:{
-    display:"flex",
-    justifyContent:"center",
-     alignItems:"center",
-     color:"white",
-     height:"inherit",
     //  border: "5px solid red",
    
 },
@@ -45,11 +44,11 @@ const Footer = () => {
     const classes = useStyles();
 
     return(
-        <footer>
+        <>
             <div className={classes.root}>
-                <Grid container className={classes.container} spacing={4} >
+                {/* <Grid container className={classes.container} spacing={4} >
                     <Grid className={classes.box} xs={3} sm={3} md={3} lg={3} xl={3}  item>
-                    <Typography  variant="h5" component="h2">
+                    <Typography  variant="h6" component="h2">
                         contact us <br /><br/> hello@Minty.art
                     </Typography>     
                         
@@ -61,7 +60,7 @@ const Footer = () => {
                            <Grid container className={classes.containerIcon}>
                                <Grid container style={{justifyContent:"center", fontSize:"100%"}}>
                                    <Grid item>
-                                       <Typography  variant="h5" component="h2">
+                                       <Typography  variant="h6" component="h2">
                                               COMMUNITY
                                        </Typography>
                                    </Grid>
@@ -86,9 +85,37 @@ const Footer = () => {
                             </Grid>   
                            
                     </Grid>
+                </Grid> */}
+
+                <Grid container className={classes.container} spacing={4} >
+
+                    <Grid className={classes.box} item xs={12} sm={12} md={4} lg={4} xl={4} >
+                            <Typography  variant="h6" component="h2">
+                                contact us<br/> hello@Minty.art
+                            </Typography>  
+                    </Grid>
+                    <Grid className={classes.box} item xs={12} sm={12} md={4} lg={4} xl={4} >
+                            <img src={Imgftr} width="25%" height="auto"></img>
+                    </Grid>
+                    <Grid className={classes.box} item xs={12} sm={12} md={4} lg={4} xl={4} >
+                        <Box>
+                        <Typography  variant="h6" component="h2">
+                                              COMMUNITY
+                        </Typography>
+                        <InstagramIcon style={{ fontSize: "xx-large" }} ></InstagramIcon>
+                        <YouTubeIcon style={{ fontSize: "xx-large" }}  ></YouTubeIcon>
+                        <TwitterIcon style={{ fontSize: "xx-large" }} ></TwitterIcon>
+
+                        </Box>
+                    </Grid>
+
                 </Grid>
+
+
+
+
             </div>
-        </footer>
+        </>
     );
 
 }

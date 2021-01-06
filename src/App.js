@@ -297,6 +297,7 @@ const App = () => {
   const classes = useStyles();
 
   return (
+    <>
     <div className={classes.container1}>
       <CssBaseline />
       <Header />
@@ -395,7 +396,7 @@ const App = () => {
         <Grid item xs={1} sm={1} lg={1} xl={1}></Grid>
 
 
-        <Grid item item className={classes.boxBorder} xs={10} sm={10} md={4} lg={4} xl={4}>
+        <Grid item className={classes.boxBorder} xs={10} sm={10} md={4} lg={4} xl={4}>
           
               <Card className={classes.cardBox}>
                 <CardContent>
@@ -412,7 +413,11 @@ const App = () => {
         <Grid item xs={1} sm={1} md={1} lg={1} xl={1}></Grid>
 
       </Grid>
+  
     </div>
+        <Footer></Footer>
+    
+    </>
   );
 }
 
