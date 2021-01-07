@@ -71,12 +71,9 @@ const FormSubmit = (e) => {
         data: $('form').serialize(),
 
         success: function () {
-
-        
         document.getElementById("formfield1").style.display = "none";
-
-
         },
+        
         error: function(XMLHttpRequest, textStatus, errorThrown) {
          alert(textStatus);
     }});
