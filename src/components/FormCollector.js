@@ -95,7 +95,7 @@ const FormCollector = () => {
     const Results = () => (
         <div id="results" style={{color:"white"}} className="search-results">
             <p>
-              successf
+            Thank you!
             </p> 
         </div>
       )

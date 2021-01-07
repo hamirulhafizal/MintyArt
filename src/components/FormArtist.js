@@ -73,7 +73,7 @@ const FormSubmit = (e) => {
         success: function () {
         document.getElementById("formfield1").style.display = "none";
         },
-        
+
         error: function(XMLHttpRequest, textStatus, errorThrown) {
          alert(textStatus);
     }});
@@ -94,7 +94,7 @@ const FormArtist = () => {
     const Results = () => (
         <div id="results" style={{color:"white"}} className="search-results">
             <p>
-              success
+              Thank you!
             </p> 
         </div>
       )
