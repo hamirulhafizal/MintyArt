@@ -52,9 +52,9 @@ const Footer = () => {
                 <Grid container className={classes.container} >
                 <Grid container style={{padding:"1%", margin:"0%"}} spacing={4}>
                     <Grid className={classes.box} item style={{display: "flex",justifyContent: "center",alignItems: "center"}}  xs={12} sm={12} md={4} lg={4} xl={4} >
-                            <Typography onClick={event =>  window.open('hello@minty.art','_blank')} style={{fontFamily: "'MontserratBold'", fontSize: "90%"}} variant="h6" component="h2">
+                            <Typography onClick={event =>  window.open(' https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hello@minty.art','_blank')} style={{fontFamily: "'MontserratBold'", fontSize: "90%"}} variant="h6" component="h2">
                                CONTACT US<br/> hello@minty.art
-                               
+                              
                                {/* <a href="mailto:hello@minty.art"></a> */}
                                
                             </Typography>  

@@ -7,18 +7,20 @@ import mouserIcon from "./assets/images/mouse.png"
 // import pexelsstevejohnson35 from "./assets/images/pexelsstevejohnson35.png"
 // import VectorSmartObjectcop from "./assets/images/VectorSmartObjectcop.png"
 
-import React from 'react';
+import React , {useState} from 'react';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
+import Button from "@material-ui/core/Button";
 
 import './App.css';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import { CssBaseline, Typography, Card, CardContent } from '@material-ui/core';
-import Form from './components/Form';
-
+import FormArtist from './components/FormArtist';
+import FormCollector from './components/FormCollector';
+import Results from './components/FormArtist';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -286,6 +288,11 @@ const useStyles = makeStyles((theme) => ({
       textAlign: "center",
     },
 
+    form2:{
+
+      display:"none",
+    }
+
   }
 
  
@@ -293,8 +300,32 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
+const form = () => {
+
+  alert("test")
+
+  return(<>
+  
+    
+  </>)
+
+}
+
+
+
 const App = () => {
   const classes = useStyles();
+
+  const form = () => {
+
+    alert("test")
+  
+    return(<>
+    
+      
+    </>)
+  
+  }
 
   return (
     <>
@@ -380,19 +411,27 @@ const App = () => {
       <Grid container spacing={2} className={classes.formArea}>
 
         <Grid item  xs={1} sm={1} md={1} lg={1} xl={1}></Grid>
-        <Grid  item className={classes.boxBorder} xs={10} sm={10} md={4} lg={4} xl={4}>
-          <Card className={classes.cardBox}>
-            <CardContent>
-              <Typography className={classes.title} variant="h5" color="textSecondary" gutterBottom>ARE YOU <br />AN ART COLLECTOR ?</Typography>
-              <hr style={{ width: "15%", background: "#ffff", border: "#ffff solid", }} />
-              <Typography variant="subtitle2" style={{ fontFamily: "MontserratBold" }} >
-                Power Art's Next Big Thing
-                   </Typography>
-              <br></br>
-              <Form />
-            </CardContent>
-          </Card>
-        </Grid>
+
+
+
+            <Grid  item className={classes.boxBorder} xs={10} sm={10} md={4} lg={4} xl={4}>
+              <Card className={classes.cardBox}>
+                <CardContent>
+                  <Typography className={classes.title} variant="h5" color="textSecondary" gutterBottom>ARE YOU <br />AN ART COLLECTOR ?</Typography>
+                  <hr style={{ width: "15%", background: "#ffff", border: "#ffff solid", }} />
+                  <Typography variant="subtitle2" style={{ fontFamily: "MontserratBold" }} >
+                    Power Art's Next Big Thing
+                      </Typography>
+                  <br></br>
+                  <FormArtist />
+                </CardContent>
+              </Card>
+            </Grid>
+
+
+
+
+
         <Grid item xs={1} sm={1} md={1} lg={1} xl={1}></Grid>
 
 
@@ -409,7 +448,9 @@ const App = () => {
                   <hr style={{ width: "15%", border: "#ffffff solid" }} />
                   <Typography variant="subtitle2" style={{ fontFamily: "MontserratBold" }} > Let us power your creativity</Typography>
                   <br></br>
-                  <Form />
+
+                  <FormCollector />
+                  
                 </CardContent>
               </Card>
             </Grid>
