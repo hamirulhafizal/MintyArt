@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/MintyArt/static/css/main.cc18e16d.chunk.css",
-    "main.js": "/MintyArt/static/js/main.7f8206c6.chunk.js",
-    "main.js.map": "/MintyArt/static/js/main.7f8206c6.chunk.js.map",
+    "main.js": "/MintyArt/static/js/main.eb98fa23.chunk.js",
+    "main.js.map": "/MintyArt/static/js/main.eb98fa23.chunk.js.map",
     "runtime-main.js": "/MintyArt/static/js/runtime-main.4496e48f.js",
     "runtime-main.js.map": "/MintyArt/static/js/runtime-main.4496e48f.js.map",
     "static/js/2.3fd955d7.chunk.js": "/MintyArt/static/js/2.3fd955d7.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.4496e48f.js",
     "static/js/2.3fd955d7.chunk.js",
     "static/css/main.cc18e16d.chunk.css",
-    "static/js/main.7f8206c6.chunk.js"
+    "static/js/main.eb98fa23.chunk.js"
   ]
 }
